@@ -8,7 +8,6 @@ body {
   padding-top: 70px;
   background-color: #fff;
   font-family: monospace;
-  width: 100%;
 }
 
 /* HEADER AND LOGO */
@@ -77,9 +76,10 @@ body {
   background: whitesmoke;
 }
 .productTextContainer {
-  padding-left: 3.2rem;
-  padding-bottom: 10%;
-  width: 700px;
+  padding-left: 3rem;
+  padding-bottom: 8%;
+  width: 650px;
+  height: auto;
   font-size: 1rem;
 }
 .productTextContainer h1 {
@@ -94,9 +94,13 @@ body {
   font-family: 'Times New Roman', Times, serif;
   padding-bottom: 2.1rem;
 }
-
+.displayImg {
+  margin: 0, auto;
+}
 .displayImg img {
-  max-height: 900px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 section .shop {
   padding: 15px 10%;
@@ -112,7 +116,7 @@ section .shop:hover {
 
 /*  NEW ARRIVAL */
 .newArrivalCont {
-  padding: 5rem 0;
+  padding: 4rem 1.5rem;
 }
 .newArrival {
   padding-bottom: 2.5rem;
@@ -126,11 +130,16 @@ section .newArrivalImg {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  gap: 20px;
-  padding-bottom: 0.7rem;
+  gap: 18px;
+  margin: 0 auto;
+}
+.newArrivalImg div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .newArrivalImg h4 {
-  padding: 1rem;
+  padding: 1.2rem;
 }
 .newArrivalImg p {
   color: #f00;
@@ -152,7 +161,7 @@ section .newArrivalImg {
 }
 section .popularImgContainer {
   display: flex;
-  /* background-color: whitesmoke; */
+  background-color: whitesmoke;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -163,15 +172,22 @@ section .popularImgContainer {
   padding: 2rem 0.4rem;
 }
 .popularImgContainer div > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   border-bottom: 3px solid red;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 675px) {
   .navBar {
     display: none;
   }
 
   .displayImg img {
-    max-height: 600px;
+    max-height: 900px;
+  }
+
+  section .newArrivalImg {
+    flex-direction: column;
   }
 }
