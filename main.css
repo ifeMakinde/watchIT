@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 5px 15px;
+  box-shadow: 0px 5px 10px;
 }
 
 .header .logoTextContainer {
@@ -37,16 +37,20 @@ body {
 .navBar .linkContainer {
   display: flex;
   justify-content: space-evenly;
-  gap: 30px;
-  transition: 0.6s all ease;
+  align-items: center;
+  text-align: center;
 }
 
 .linkContainer li {
+  display: inline-block;
+  padding: 0 0.9rem;
   list-style-type: none;
+  transition: 0.6s all ease;
+  width: 60%;
 }
 
 .linkContainer a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #000;
   text-decoration: none;
@@ -60,13 +64,22 @@ body {
 }
 
 .icons {
-  font-size: 1.2rem;
-  margin-right: 25px;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  /* width: 20% */
   display: flex;
-  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons i {
+  display: inline-block;
+  padding: 0 0.5rem;
 }
 .icons i:hover {
   color: #f00;
+}
+.icons .fa-bars {
+  display: none;
 }
 
 .productContainer {
@@ -76,6 +89,7 @@ body {
   background: whitesmoke;
 }
 .productTextContainer {
+  display: block;
   padding-left: 3rem;
   padding-bottom: 8%;
   width: 650px;
@@ -120,9 +134,10 @@ section .shop:hover {
 }
 .newArrival {
   padding-bottom: 2.5rem;
-  padding-left: 3.2rem;
+  padding-left: 1.5rem;
   font-size: 2rem;
   font-family: serif;
+  text-align: center;
   text-transform: capitalize;
 }
 section .newArrivalImg {
@@ -147,6 +162,10 @@ section .newArrivalImg {
 }
 
 /* to style on small screen , the p text is  taking full width */
+
+.popularContainer {
+  margin: 0 auto;
+}
 .popularTextCont {
   text-align: center;
   padding: 2.5rem;
@@ -160,16 +179,17 @@ section .newArrivalImg {
   font-size: 0.9rem;
 }
 section .popularImgContainer {
+  /* margin: 0 3rem; */
   display: flex;
-  background-color: whitesmoke;
+  background-color: transparent;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  /* gap: 5px; */
 }
 .popularImgContainer div {
-  padding: 2rem 0.4rem;
+  padding: 1.7rem 0.3rem;
+  font-size: 1rem;
 }
 .popularImgContainer div > img {
   display: block;
@@ -177,10 +197,45 @@ section .popularImgContainer {
   height: auto;
   border-bottom: 3px solid red;
 }
+.moreProd {
+  text-align: center;
+  padding: 4rem;
+}
+.moreProd a {
+  text-decoration: none;
+  color: #fff;
+  background: #f00;
+  padding: 1rem 1.3rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+section #video {
+  margin: 0.8rem;
+}
+#video video {
+  max-width: 100%;
+  height: auto;
+}
 
-@media (max-width: 675px) {
+.choiceContainer .flex1,
+.flex2 {
+  display: flex;
+}
+.choiceContainer .flex2 {
+  flex-direction: row-reverse;
+}
+/* screen with 760px and smaller */
+@media all and (max-width: 760px) {
   .navBar {
     display: none;
+  }
+  .icons i {
+    font-weight: light;
+    gap: 20px;
+  }
+  .icons .fa-bars {
+    display: block;
   }
 
   .displayImg img {
@@ -189,5 +244,14 @@ section .popularImgContainer {
 
   section .newArrivalImg {
     flex-direction: column;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .icons {
+    margin-right: 5px;
+  }
+  .icons i {
+    padding: 0 0.4rem;
   }
 }
