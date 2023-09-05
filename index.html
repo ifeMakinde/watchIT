@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>watchIT</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="./resources/all.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link href="./CSS/query.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -28,168 +29,199 @@
 
       <div class="icons">
         <i class="fa-solid fa-magnifying-glass rmv"></i>
-        <i class="fa-regular fa-user rmv"></i>
+        <i class="fa-solid fa-user rmv"></i>
         <i class="fa-solid fa-cart-shopping rmv"></i>
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
     <!-- END -->
 
-    <!-- PRODUCT CONTAINER -->
-    <section class="productContainer">
-      <div class="productTextContainer">
-        <h1 class="productText">select your new perfect style</h1>
-        <p class="productPara">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a
-          quidem, perferendis consectetur commodi tempora! Sunt, asperiores
-          optio!
-        </p>
-        <button class="shop">SHOP NOW</button>
-      </div>
+    <!-- HERO SECTION-->
 
-      <div class="displayImg">
-        <img src="resources/images/watch.png" alt="" />
-      </div>
-    </section>
-    <!-- PRODUCT END -->
-
-    <!--  NEW ARRIVAL -->
-    <section class="newArrivalCont">
-      <div class="newArrival">
-        <h1 class="newArrivalHead">new arrivals</h1>
-      </div>
-      <div class="newArrivalImg">
-        <div>
-          <img src="./resources/images/new arrival1.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-        <div>
-          <img src="./resources/images/new arrival2.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-        <div>
-          <img src="./resources/images/new_product3.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-      </div>
-    </section>
-    <!-- END OF NEW ARRIVAL -->
-
-    <section class="popularContainer" id="showMore">
-      <div class="popularTextCont">
-        <h1>Popular Items</h1>
-        <p>
-          Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-          gravida.
-        </p>
-      </div>
-      <div class="popularImgContainer">
-        <div>
-          <img src="./resources/images/popular1.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-
-        <div>
-          <img src="./resources/images/popular2.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-
-        <div>
-          <img src="./resources/images/popular3.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-
-        <div>
-          <img src="./resources/images/popular4.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-
-        <div>
-          <img src="./resources/images/popular5.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-
-        <div>
-          <img src="./resources/images/popular6.png" alt="" />
-          <h4>Thermo Ball Etip Gloves</h4>
-          <p>$ 45,743</p>
-        </div>
-      </div>
-      <div class="moreProd">
-        <h1>
-          <a href=""> view more products</a>
-        </h1>
-      </div>
-    </section>
-    <!-- END OF POPULAR -->
-
-    <section id="video">
-      <video src="./resources/pexels.mp4" controls autoplay loop></video>
-    </section>
-
-    <!-- CHOICE SECTION -->
-    <section class="choice">
-      <div class="choiceContainer">
-        <div class="flex1">
-          <div class="el-1">
-            <h1>watch of choice</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              voluptate, sit cumque blanditiis error nesciunt possimus nisi qui
-              hic tempora impedit ut officia eos. Repellendus.
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="heroText">
+            <h1 class="hero-heading">Select your new perfect style</h1>
+            <p class="heroDescription">
+              Lets style you with wristwatch that best fit your personality. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit consectetur commodi tempora sunt
+              optio!
             </p>
-            <a href="#showMore"> show watches </a>
+            <button class="shop">shop now</button>
           </div>
-          <div class="img">
-            <img src="./resources/images/popular2.png" alt="image of watch" />
+
+          <div class="hero-img">
+            <img src="/images/watch.png" alt="" />
           </div>
         </div>
+      </section>
+      <!-- HERO END-->
 
-        <div class="flex2">
-          <div class="el-1">
-            <h1>watch of choice</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              voluptate, sit cumque blanditiis error nesciunt possimus nisi qui
-              hic tempora impedit ut officia eos. Repellendus.
+      <section class="featured-section">
+        <div class="featured-in">
+          <div class="featured-content">
+            <h2 class="featured-text">Trusted by over 1 million+ brands</h2>
+          </div>
+          <div class="featured-img">
+            <img src="./images/featured/coke_prev_ui.png" alt="" />
+            <img src="./images/featured/flutter_prev_ui.png" alt="" />
+            <img src="./images/featured/google_prev_ui (1).png" alt="" />
+            <img src="./images/featured/fcmb_prev_ui.png" alt="" />
+            <img src="./images/featured/dangtote.png" alt="" />
+            <img src="./images/featured/uba_prev_ui.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--  NEW ARRIVAL -->
+      <section class="new-arrival-section">
+        <div class="new-arrival-container">
+          <div class="new-arrivals">
+            <h2 class="new-arrival-head">new arrivals</h2>
+          </div>
+          <div class="new-arrival-img">
+            <div>
+              <img src="./images/new arrival1.png" alt="" />
+              <p>Thermo Ball Etip Gloves</p>
+              <p class="price">$45,743</p>
+            </div>
+            <div>
+              <img src="./images/new arrival2.png" alt="" />
+              <p>Thermo Ball Etip Gloves</p>
+              <p class="price">$45,743</p>
+            </div>
+            <div>
+              <img src="./images/new_product3.png" alt="" />
+              <p>Thermo Ball Etip Gloves</p>
+              <p class="price">$45,743</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF NEW ARRIVAL -->
+
+      <section class="popular-section" id="showMore">
+        <div class="popular">
+          <div class="popular-text-container">
+            <h2 class="popular-heading">Popular Items</h2>
+            <p class="popular-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsum ducimus ipsum
+              dolor sit.
             </p>
-            <a href="#showMore"> show watches </a>
+          </div>
+          <div class="popularImgContainer">
+            <div>
+              <img src="./images/popular1.png" alt="" />
+              <h4>Thermo Ball Etip Gloves</h4>
+              <p>$ 45,743</p>
+            </div>
+
+            <div>
+              <img src="./images/popular2.png" alt="" />
+              <h4>Thermo Ball Etip Gloves</h4>
+              <p>$ 45,743</p>
+            </div>
+
+            <div>
+              <img src="./images/popular3.png" alt="" />
+              <h4>Thermo Ball Etip Gloves</h4>
+              <p>$ 45,743</p>
+            </div>
+
+            <div>
+              <img src="./images/popular4.png" alt="" />
+              <h4>Thermo Ball Etip Gloves</h4>
+              <p>$ 45,743</p>
+            </div>
+
+            <div>
+              <img src="./images/popular5.png" alt="" />
+              <h4>Thermo Ball Etip Gloves</h4>
+              <p>$ 45,743</p>
+            </div>
+
+            <div>
+              <img src="./images/popular6.png" alt="" />
+              <h4>Thermo Ball Etip Gloves</h4>
+              <p>$ 45,743</p>
+            </div>
+          </div>
+          <div class="moreProd">
+            <h1>
+              <a href=""> view more products &rarr;</a>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- END OF POPULAR -->
+
+      <section class="video-section">
+        <div class="video-content">
+          <video src="./video/pexels.mp4" id="video" controls autoplay loop></video>
+        </div>
+      </section>
+
+      <!-- CHOICE SECTION -->
+
+      <section class="choice-section">
+        <div class="choice-container">
+          <div class="flex1">
+            <div class="choice-content">
+              <h3>watch of choice</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                voluptate, sit cumque blanditiis error nesciunt possimus nisi qui hic
+                tempora impedit ut officia eos. Repellendus.
+              </p>
+              <a href="#showMore"> show watches </a>
+            </div>
+            <div class="img">
+              <img src="./images/popular2.png" alt="image of watch" />
+            </div>
+          </div>
+
+          <div class="flex2">
+            <div>
+              <img src="./images/popular6.png" alt="image of watch" />
+            </div>
+            <div class="choice-content">
+              <h3>watch of choice</h3>
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eligendi
+                Voluptate, Sit Cumque Blanditiis Error Nesciunt Possimus Nisi Qui Hic
+                Tempora Impedit Ut Officia Eos. Repellendus.
+              </p>
+              <a href="#showMore"> show watches </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF CHOICE -->
+
+      <!-- PAYMENT METHOD -->
+      <section class="payment-section">
+        <div class="payment">
+          <div>
+            <span><i class="fa-solid fa-box"></i></span>
+            <h3>free shipping method</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
           <div>
-            <img src="./resources/images/popular6.png" alt="image of watch" />
+            <span><i class="fa-solid fa-key"></i></span>
+            <h3>secure payment system</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-repeat"></i></span>
+            <h3>fast delivery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- END OF CHOICE -->
+      </section>
+      <!-- END OF PAYMENT METHOD -->
+    </main>
 
-    <!-- PAYMENT METHOD -->
-    <section class="paymentMethod">
-      <div>
-        <span><i class="fa-solid fa-box"></i></span>
-        <h3>free shipping method</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-      <div>
-        <span><i class="fa-solid fa-key"></i></span>
-        <h3>secure payment system</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-      <div>
-        <span><i class="fa-solid fa-repeat"></i></span>
-        <h3>fast delivery</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-    </section>
-    <!-- END OF PAYMENT METHOD -->
+    <script src="main.js"></script>
   </body>
 </html>
